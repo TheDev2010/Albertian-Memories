@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albertian Memories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js"></script>
+    <link rel="icon" href="assets/webicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">St. Albert the Great</a>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="servicespage.html">Services</a></li>
+                <li><a href="projectspage.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="image-container" id="image-container">
+            <div class="image-overlay"></div>
+            <img src="assets/albert_adviser.png" alt="Albert Adviser" class="hover-image">
+        </div>
+        <div class="description-container" id="about">
+            <h2>St. Albert the Great | S.Y 2024 - 2025</h2>
+            <section class="content">
+                <p>
+                    Grade 9 - St. Albert the Great was a section of excellence, excelling in academics, sports, and character.
+                    <span id="more-content" class="hidden-content" style="display: none;">Students showcased intelligence, teamwork, and dedication, consistently ranking among the top performers.
+                    Beyond the classroom, they were fierce yet fair competitors in sports, displaying both skill and sportsmanship.
+                    Their discipline and unity were evident in their confidence and pride as they represented their section. 
+                    More than just a section, they were a family—supporting and inspiring each other,
+                    leaving behind a legacy of camaraderie, appreciation, and unforgettable memories.</span>
+                </p>
+                <button class="see-more-btn" onclick="toggleContent()">See More</button>
+            </section>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide" style="background-image: url('assets/albert_cf.jpg');"></div>
+                    <div class="slide" style="background-image: url('assets/albert_ap.png');"></div>
+                    <div class="slide" style="background-image: url('assets/albert_adviser.png');"></div>
+                </div>
+            </div>
+            <p>
+                <i>*I apologize for the low quality images*</i>
+            </p>
+        </div>
+        <h3 class="change-color">Our Beloved Teachers</h3>
+        <div class="cards-container" id="teachers">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_adviser.png" alt="Miss Rona">
+                </div>
+                <div class="card-content">
+                    <h3>Miss Rona (MAPEH)</h3>
+                    <p>MAPEH has been a journey of creativity, expression, and movement, with retrospection of past cultures.
+                        <span id="hidden-content-mapeh" class="hidden-text">Through music, arts, PE, and health, we have learned to appreciate our talents, stay active, and embrace a well-rounded lifestyle. We miss the exciting activities and the way you encouraged us to shine in different forms of expression.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-mapeh')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_tle.png" alt="Sir Ron">
+                </div>
+                <div class="card-content">
+                    <h3>Sir Ron (ICT)</h3>
+                    <p>ICT has given us useful knowledge when handling computers, both internally and externally.
+                        <span id="hidden-content-ict" class="hidden-text">From the meaning of ICT to how to handle computers, your lessons have taught us practical knowledge that we will carry into the future. We miss your recitations and how you guided us with patience and expertise.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-ict')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_sci.jpg" alt="Sir Yobs">
+                </div>
+                <div class="card-content">
+                    <h3>Sir Yobs (Science)</h3>
+                    <p>Science has been an exciting journey of discovery and curiosity, in accordance with practicality and boundaries.
+                        <span id="hidden-content-science" class="hidden-text">You have inspired us to explore the wonders of the universe, from the smallest particles to the vast cosmos. We miss the engaging experiments and the way you made learning both fun and meaningful.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-science')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_cf.jpg" alt="Sir DJ">
+                </div>
+                <div class="card-content">
+                    <h3>Sir DJ (CF)</h3>
+                    <p>CF has truly shaped our values and deepened our faith, giving us a better look towards religious figures.
+                        <span id="hidden-content-cf" class="hidden-text">Your guidance has taught us kindness, compassion, and integrity, helping us grow not just academically but spiritually. We miss the meaningful discussions and the wisdom you share with us.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-cf')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_ap.png" alt="Miss Nina">
+                </div>
+                <div class="card-content">
+                    <h3>Miss Nina (Araling Panlipunan)</h3>
+                    <p>Araling Panlipunan has helped us understand how the economy works and establish a simple basis on economics.
+                        <span id="hidden-content-ap" class="hidden-text">Your lessons have given us a sense of responsibility when looking into the economy. We miss the engaging discussions and the way you explain Mathematics throughout our lessons.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-ap')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_math.jpg" alt="Sir Mapa">
+                </div>
+                <div class="card-content">
+                    <h3>Sir Mapa (Math)</h3>
+                    <p>Math has challenged and strengthened our problem-solving skills by making it difficult but rewarding in a way.
+                        <span id="hidden-content-math" class="hidden-text">Your patience and clear explanations have helped us build confidence in numbers. We miss the step-by-step guidance that made complex equations feel achievable and the never-ending book/daily learning activities.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-math')">See More</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/albert_fil.jpg" alt="Ginang Lyka">
+                </div>
+                <div class="card-content">
+                    <h3>Ginang Lyka (Filipino)</h3>
+                    <p>Filipino has deepened our love for our language and culture, with our national hero, Jose Rizal, as the pillar.
+                        <span id="hidden-content-filipino" class="hidden-text">Through literature and discussion, you have shown us the beauty and power of our words. We miss the inspiring lessons that remind us of the richness of our heritage.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleCardContent(this, 'hidden-content-filipino')">See More</button>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-title">Past Major Events</h3>
+        <div class="event-container" id="events">
+            <div class="event-card">
+                <h2 class="event-title">Buwan ng Wika</h2>
+                <div class="event-detail">
+                  <span class="icon">📅</span>
+                  <span>September 11, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <span class="icon">📍</span>
+                  <span>Cainta Catholic College</span>
+                </div>
+                <p class="event-description">
+                  A national celebration of our beloved language, Filipino, while honoring our national heroes who fought for our country.
+                </p>
+                <a href="buwanngwika.html" class="event-more-button">See More</a>
+            </div>
+
+            <div class="event-card">
+                <h2 class="event-title">Christmas Party</h2>
+                <div class="event-detail">
+                  <span class="icon">📅</span>
+                  <span>December 14, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <span class="icon">📍</span>
+                  <span>Cainta Catholic College</span>
+                </div>
+                <p class="event-description">
+                  A wondrous time of celebrating the very birth of our Lord and Savior, Jesus Christ, in accordance to his life, death, and resurrection.
+                </p>
+                <a href="christmasparty.html" class="event-more-button">See More</a>
+              </div>
+            
+            <div class="event-card">
+              <h2 class="event-title">School Fieldtrip</h2>
+              <div class="event-detail">
+                <span class="icon">📅</span>
+                <span>January 23, 2025</span>
+              </div>
+              <div class="event-detail">
+                <span class="icon">📍</span>
+                <span>Paradise Adventure Camp (San Jose Del Monte, Bulacan)</span>
+              </div>
+              <p class="event-description">
+                An enriching school activity that taught us basic water survival skills through forms of memorable activities.
+              </p>
+              <a href="fieldtrip.html" class="event-more-button">See More</a>
+            </div>
+
+            <div class="event-card">
+              <h2 class="event-title">Intramurals (Cheerdance)</h2>
+              <div class="event-detail">
+                <span class="icon">📅</span>
+                <span>January 27, 2025</span>
+              </div>
+              <div class="event-detail">
+                <span class="icon">📍</span>
+                <span>Cainta Catholic College</span>
+              </div>
+              <p class="event-description">
+                A memorable experience where we worked our butts off to produce an astounding performance.
+              </p>
+              <a href="cheerdance.html" class="event-more-button">See More</a>
+            </div>
+
+            <div class="event-card">
+                <h2 class="event-title">Last Days</h2>
+                <div class="event-detail">
+                  <span class="icon">📅</span>
+                  <span>March 11 - 12, 2025</span>
+                </div>
+                <div class="event-detail">
+                  <span class="icon">📍</span>
+                  <span>Cainta Catholic College</span>
+                </div>
+                <p class="event-description">
+                  A saddening sight to see each other part ways throughout the summer. <i>(Stay tuned for Aloysius hehe)</i>
+                </p>
+                <a href="lastdays.html" class="event-more-button">See More</a>
+            </div>
+
+            <div class="event-card">
+                <h2 class="event-title">Moving Up Practice</h2>
+                <div class="event-detail">
+                  <span class="icon">📅</span>
+                  <span>March 20, 2025</span>
+                </div>
+                <div class="event-detail">
+                  <span class="icon">📍</span>
+                  <span>Cainta Catholic College</span>
+                </div>
+                <p class="event-description">
+                  Simple preparations for a ceremony that celebrates our achievements we have garnered throughout the school year.
+                </p>
+                <a href="movingup.html" class="event-more-button">See More</a>
+            </div>
+        </div>
+    </main>
+    <footer id="dynamic-footer">
+        <div class="footer-content">
+            <div class="footer-column logo-column">
+                <a href="#image-container">
+                    <img src="assets/webicon.png" alt="Albertian Memories Logo" class="footer-logo">
+                </a>
+                <p>&copy; 2025 Albertian Memories</p>
+                <p>
+                    <i>*Scroll up to remove the footer</i>
+                </p>
+            </div>
+            <div class="footer-column contact-column">
+                <h4>Contact</h4>
+                <p>Email: jhericabejero@gmail.com</p>
+                <p>Alternative Email: abejerojheric@gmail.com</p>
+                <p>Phone: +63 9194939049</p>
+            </div>
+            <div class="footer-column links-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
